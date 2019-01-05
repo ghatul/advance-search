@@ -4,9 +4,13 @@
   "description": "Boolean search",
   "main": "index.js",
   "publishConfig": {
-    "registry": ""
+    "registry": "https://registry.npmjs.org"
   },
   "typings": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghatul/advance-search.git"
+  },
   "scripts": {
     "start": "nodemon server.js",
     "build": "webpack --config webpack.config.js",
