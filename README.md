@@ -54,6 +54,7 @@ Example: (Support collection array & string attributes)
     "role" : "admin"  
 }  
 
+# Ex.
 
 let res = gk.query('(nodejs AND (java or php))', 'skills', 'array');
 
