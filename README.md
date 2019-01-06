@@ -2,6 +2,7 @@
 
 This module help to build advance mongodb search queries.
 
+Like........  
 EX.  
 (nodejs ANd php or angullar 4)  
 (nodejs or (java and (angular 2 or (reactjs and javascript))))  
@@ -18,9 +19,21 @@ Example: (Support collection array & string attributes)
 
 2. let res = gk.query('(tom or jon)', 'first_name', 'string');
 
- 1st parameter is infix expression.  
- 2nd is the name of colection attribute.  
- 3rd is the type of collection atrribute (array or string).  
+ -> 1st parameter is infix expression.  
+ -> 2nd is the name of collection attribute.  
+ -> 3rd is the type of collection attribute (array or string).  
+
+Pass the response query to mongodb for search.  
+
+let res = gk.query('(nodejs AND (java or php))', 'skills', 'array');  
+
+ db.collection('user')  
+   .find(res.query)  
+   .then(result => {  
+    //  
+   }).catch(err => {  
+    //  
+   })  
 
  # Response types:
 
@@ -54,19 +67,7 @@ Example: (Support collection array & string attributes)
     "role" : "admin"  
 }  
 
-# Ex.
-
-let res = gk.query('(nodejs AND (java or php))', 'skills', 'array');
-
-db.collection('user')  
-   .find(res.query)  
-   .then(result => {  
-    //  
-   }).catch(err => {  
-    //  
-   })  
-
-
+![alt text](https://github.com/ghatul/advance-search/tree/master/public/user.PNG)
 
 
 
