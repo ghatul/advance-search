@@ -1,5 +1,7 @@
 # Advance search:
 
+![](http://img.shields.io/badge/stability-stable-green.svg?style=flat)  
+
 This module help to build advance mongodb search queries.
 
 Like........  
