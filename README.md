@@ -67,7 +67,7 @@ let res = gk.query('(nodejs AND (java or php))', 'skills', 'array');
     "role" : "admin"  
 }  
 
-![alt text](https://github.com/ghatul/advance-search/tree/master/public/user.PNG)
+![ScreenShot](https://github.com/ghatul/advance-search/tree/master/public/user.PNG)
 
 
 
